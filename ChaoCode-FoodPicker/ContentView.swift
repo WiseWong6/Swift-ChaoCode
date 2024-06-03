@@ -11,7 +11,7 @@ import Foundation
 struct ContentView: View {
     let foods = ["冻干","猫粮","猫条","水","没得吃","鸡蛋黄","牛肉","三文鱼","秋刀鱼","鸡胸肉","蓝莓","草莓","苹果","燕麦","豆腐","胡萝卜","玉米",]
     @State private var randomFood :String?
-    //初始化上传备注
+    //重新初始化
     var body: some View {
         VStack {
             Image("heliotrope")
