@@ -11,6 +11,7 @@
 		53F4A29F2C0D9A9800AF8BE2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F4A29E2C0D9A9800AF8BE2 /* ContentView.swift */; };
 		53F4A2A12C0D9A9900AF8BE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53F4A2A02C0D9A9900AF8BE2 /* Assets.xcassets */; };
 		53F4A2A42C0D9A9900AF8BE2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53F4A2A32C0D9A9900AF8BE2 /* Preview Assets.xcassets */; };
+		53F4A2AE2C0E0E8E00AF8BE2 /* Foods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F4A2AD2C0E0E8E00AF8BE2 /* Foods.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		53F4A29E2C0D9A9800AF8BE2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		53F4A2A02C0D9A9900AF8BE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		53F4A2A32C0D9A9900AF8BE2 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		53F4A2AD2C0E0E8E00AF8BE2 /* Foods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Foods.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +53,9 @@
 		53F4A29B2C0D9A9800AF8BE2 /* ChaoCode-FoodPicker */ = {
 			isa = PBXGroup;
 			children = (
-				53F4A29C2C0D9A9800AF8BE2 /* ChaoCode_FoodPickerApp.swift */,
-				53F4A29E2C0D9A9800AF8BE2 /* ContentView.swift */,
-				53F4A2A02C0D9A9900AF8BE2 /* Assets.xcassets */,
+				53F4A2AC2C0E0E7200AF8BE2 /* App */,
+				53F4A2AB2C0E0E6800AF8BE2 /* Model */,
+				53F4A2AA2C0E0E6000AF8BE2 /* View */,
 				53F4A2A22C0D9A9900AF8BE2 /* Preview Content */,
 			);
 			path = "ChaoCode-FoodPicker";
@@ -65,6 +67,31 @@
 				53F4A2A32C0D9A9900AF8BE2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		53F4A2AA2C0E0E6000AF8BE2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				53F4A29E2C0D9A9800AF8BE2 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		53F4A2AB2C0E0E6800AF8BE2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				53F4A2AD2C0E0E8E00AF8BE2 /* Foods.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		53F4A2AC2C0E0E7200AF8BE2 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				53F4A2A02C0D9A9900AF8BE2 /* Assets.xcassets */,
+				53F4A29C2C0D9A9800AF8BE2 /* ChaoCode_FoodPickerApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53F4A2AE2C0E0E8E00AF8BE2 /* Foods.swift in Sources */,
 				53F4A29F2C0D9A9800AF8BE2 /* ContentView.swift in Sources */,
 				53F4A29D2C0D9A9800AF8BE2 /* ChaoCode_FoodPickerApp.swift in Sources */,
 			);
