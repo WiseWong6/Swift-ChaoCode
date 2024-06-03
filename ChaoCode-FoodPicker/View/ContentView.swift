@@ -37,18 +37,12 @@ struct ContentView: View {
             .buttonStyle(.bordered)
             buttonAdjust(by:1,symbol: "person.crop.circle.fill.badge.questionmark" ,txt: foods.randomFood == .none ? "问问 11 🐷" : "换一个")
             .buttonStyle(.borderedProminent)
-
         }
     }
-    
+
     func buttonAdjust(by def :Int,symbol:String,txt:String) -> some View{
         Button(action: {
-            if def == 1{
-                self.foods.randomFoodSelect()
-            }else{
-                foods.randomFood = .none
-            }
-            
+            buttonAction(by: def)
         }, label: {
             Image(systemName: symbol)
             Text(txt).frame(width:120)
@@ -58,8 +52,16 @@ struct ContentView: View {
 //        .font(.title2)
     }
     
+    func buttonAction(by def :Int){
+        if def == 1{
+            self.foods.randomFoodSelect()
+        }else{
+            foods.randomFood = .none
+        }
+    }
 
 }
+
 
 #Preview {
     ContentView()
